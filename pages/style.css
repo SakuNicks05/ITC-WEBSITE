@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/* ******************************* BACKGROUND STYLING ******************************* */
+
+.gradient-background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    inset: 0;
+    margin: auto;
+    filter: blur(120px);
+}
+
+.gradient-container {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    min-width: 1000px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.grad-1 {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background: conic-gradient(from 0deg, #008BCF, #F5ECEF, #DCBDDF, #008BCF, #F5ECEF, #F6EDF0, #dca8e0);
+    animation: anim-gradient 5s linear infinite;
+}
+
+@keyframes anim-gradient {
+    0% {
+        transform: rotate(0deg) scale(2);
+    } 
+
+    100% {
+        transform: rotate(1turn) scale(2);
+    }
+}
+
+/* ******************************* TITLES STYLING ******************************* */
+
+#main-title {
+    position: relative;
+    font-family: 'Krona One', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin: 16px 0;
+    color: black;
+    z-index: 10;
+}
+
+#top-songs {
+    position: relative;
+    font-family: 'Konkhmer Sleokchher';
+    font-weight: 300;
+    padding: 10px 0px 10px 35px;
+}
+
+/* ******************************* NAVBAR STYLING ******************************* */
+
+.navbar-list {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    position: relative;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.navbar-list li a {
+    color: white;
+    font-size: 15px;
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar-list li a:hover {
+    color: #312648;
+    transition: ease 0.3s;
+}
+
+/* ******************************* SONG INFO STYLING ******************************* */
+
+.song-info-container {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+
+    z-index: 20;
+    opacity: 100%;
+    width: 60vw;
+    margin-left: -20px;
+
+    list-style-type: none;
+    color: #483C64;
+}
+
+#album {
+    margin-left: 65px;
+}
+
+#duration {
+    margin-left: -15px;
+}
+
+.song-info-container li {
+    font-family: 'Konkhmer Sleokchher';
+    font-size: 12px;
+}
+
+.divider {
+    display: flex;
+    width: 58vw;
+}
+
+.divider hr {
+    position: relative;
+    flex: 1;
+    margin-left: 35px;
+    border: none;
+    opacity: 0.5;
+    height: 2px;
+    background-color: #5A5A5A;
+}
+
+/* ******************************* SONG LIST STYLING ******************************* */
+
+.content-container {
+    display: flex;
+    gap: 25px;
+}
+
+.songlist-container {
+    position: relative;
+    width: 60vw;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+
+.song-box {
+    border-radius: 8px;
+    height: 76px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+/* ******************************* SONG CARD STYLING ******************************* */
+
+.card-container {
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+    border-radius: 12px;
+    margin-right: 35px;
+    margin-top: -65px;
+    margin-bottom: 15px;
+    
+    background-color: rgba(0, 0, 0, 0.1);
+}

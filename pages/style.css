@@ -36,7 +36,8 @@ body {
     margin: auto;
     width: 100vw;
     height: 100vh;
-    background: conic-gradient(from 0deg, #008BCF, #F5ECEF, #DCBDDF, #008BCF, #F5ECEF, #F6EDF0, #dca8e0);
+    background: conic-gradient(from 0deg, #008BCF, #F5ECEF, #9d59bd, #d4a4d8, #008BCF, #F5ECEF, #6d467c, #F6EDF0, #dca8e0);
+    /* background: conic-gradient(from 0deg, #03788C, #18234d, #291949, #6D017B, #0E142A, #03788C, #a71eb9, #1A112C); */
     animation: anim-gradient 5s linear infinite;
 }
 
@@ -147,6 +148,7 @@ body {
 .content-container {
     display: flex;
     gap: 25px;
+    height: calc(100vh - 250px);
 }
 
 .songlist-container {
@@ -154,6 +156,9 @@ body {
     width: 60vw;
     margin-left: 35px;
     margin-top: 25px;
+
+    padding: 10px;
+    overflow-y: auto;
 }
 
 .song-box {
@@ -163,16 +168,35 @@ body {
     margin-bottom: 15px;
 }
 
+/* ******************************* SCROLLBAR STYLING ******************************* */
+
+.songlist-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.songlist-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+.songlist-container::-webkit-scrollbar-thumb {
+    background-color: rgba(47, 36, 65, 0.5);
+    border-radius: 50px;
+}
+
+.songlist-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(14, 8, 24, 0.5);
+}
+
 /* ******************************* SONG CARD STYLING ******************************* */
 
 .card-container {
-    position: relative;
+    position: sticky;
     width: 40vw;
-    height: 100vh;
+    height: calc((76px + 15px) * 5);
     border-radius: 12px;
     margin-right: 35px;
-    margin-top: -65px;
-    margin-bottom: 15px;
+    margin-top: -90px;
     
     background-color: rgba(0, 0, 0, 0.1);
 }

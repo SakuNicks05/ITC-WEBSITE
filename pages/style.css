@@ -115,6 +115,10 @@ body {
     color: #483C64;
 }
 
+#title {
+    margin-left: 55px;
+}
+
 #album {
     margin-left: 65px;
 }
@@ -153,19 +157,85 @@ body {
 
 .songlist-container {
     position: relative;
+    list-style: none;
     width: 60vw;
     margin-left: 35px;
     margin-top: 25px;
 
     padding: 10px;
     overflow-y: auto;
+
+    counter-reset: track;
 }
 
 .song-box {
+    position: relative;
     border-radius: 8px;
     height: 76px;
     background-color: rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
+
+    counter-increment: track;
+    display: flex;
+    align-items: center;
+}
+
+.song-box::before {
+    content: counter(track);
+    font-family: 'Konkhmer Sleokchher';
+    font-size: 40px;
+    width: 65px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ******************************* SONG BOX STYLING ******************************* */
+
+.album-cover {
+    width: 55px;
+    border-radius: 2px;
+}
+
+.song-title,
+.artist,
+.album,
+.duration {
+    font-family: 'Kumbh Sans';
+}
+
+.song-title,
+.artist {
+    margin-left: 10px;
+}
+
+.song-title {
+    font-weight: bold;
+}
+
+.artist {
+    font-size: 16px;
+}
+
+.album {
+    font-size: 18px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.duration {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.play,
+.duration,
+.album {
+    margin-left: auto;
+}
+
+.play {
+    width: 50px;
+    margin-right: 20px;
 }
 
 /* ******************************* SCROLLBAR STYLING ******************************* */
@@ -200,3 +270,13 @@ body {
     
     background-color: rgba(0, 0, 0, 0.1);
 }
+
+
+
+
+
+
+
+
+
+

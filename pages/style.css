@@ -115,13 +115,24 @@ body {
     color: #483C64;
 }
 
-.song-info-container,
-#album,
-#duration {
+.song-info-container {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-left: 130px;
 }
+
+/* #title {
+    margin-left: 10px;
+}
+
+#album {
+    margin-left: 150px;
+}
+
+#duration {
+    margin-left: 65px;
+} */
 
 .song-info-container div {
     font-family: 'Konkhmer Sleokchher';
@@ -130,7 +141,7 @@ body {
 
 .divider {
     display: flex;
-    width: 58vw;
+    width: 73vw;
 }
 
 .divider hr {
@@ -154,7 +165,7 @@ body {
 .songlist-container {
     position: relative;
     list-style: none;
-    width: 60vw;
+    width: 70vw;
     margin-left: 35px;
     margin-top: 25px;
 
@@ -196,7 +207,7 @@ body {
                         150px
                         50px;
     align-items: center;
-    column-gap: 5px;
+    column-gap: 15px;
 }
 
 /* ******************************* SONG BOX STYLING ******************************* */
@@ -260,21 +271,52 @@ body {
 
 .card-container {
     position: sticky;
-    width: 40vw;
-    height: calc((76px + 15px) * 5);
+    width: 21vw;
+    height: calc((76px + 19px) * 5);
     border-radius: 12px;
-    margin-right: 35px;
-    margin-top: -90px;
+    margin-top: -75px;
+    /* margin-left: 70px; */
     
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.card-container p {
+    text-align: center;
+    margin-top: 12px;
+}
 
+.card-album {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
 
+#card-title,
+#card-song-album {
+    font-weight: bold;
+}
 
+#card-title,
+#card-song-album,
+#card-artist {
+    font-family: 'Kumbh Sans';
+}
 
+#card-title {
+    font-size: 28px;
+}
 
+#card-artist {
+    margin-top: -5px;
+    font-size: 16px;
+}
 
-
-
-
+#card-song-album {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+}

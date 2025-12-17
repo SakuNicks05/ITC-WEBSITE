@@ -109,30 +109,25 @@ body {
     z-index: 20;
     opacity: 100%;
     width: 60vw;
-    margin-left: -20px;
+    margin-left: 210px;
 
     list-style-type: none;
     color: #483C64;
+
+    display: grid;
+    grid-template-columns: 
+                        50px
+                        50px 
+                        60px;
+    align-items: center;
+    column-gap: 15px;
 }
 
 .song-info-container {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 130px;
 }
-
-/* #title {
-    margin-left: 10px;
-}
-
-#album {
-    margin-left: 150px;
-}
-
-#duration {
-    margin-left: 65px;
-} */
 
 .song-info-container div {
     font-family: 'Konkhmer Sleokchher';
@@ -152,6 +147,14 @@ body {
     opacity: 0.5;
     height: 2px;
     background-color: #5A5A5A;
+}
+
+#album {
+    margin-left: 255px;
+}
+
+#duration {
+    margin-left: 455px;
 }
 
 /* ******************************* SONG LIST STYLING ******************************* */
@@ -196,15 +199,15 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.song-box,
-.song-info-container {
+.song-box {
     display: grid;
     grid-template-columns: 
-                        60px 
-                        minmax(10px, 20px)
-                        minmax(10px, 80px)
-                        minmax(10px, 210px) 
-                        150px
+                        50px
+                        5px 
+                        60px
+                        0.7fr
+                        200px
+                        50px
                         50px;
     align-items: center;
     column-gap: 15px;
@@ -239,13 +242,25 @@ body {
 }
 
 .play {
-    width: 50px;
+    cursor: pointer;
+    margin-left: 90px;
 }
 
 .duration {
     font-size: 18px;
     font-weight: bold;
+    width: 40px;
+    margin-left: 55px;
 }
+
+/* .song-info-container,
+#number,
+#cover,
+#title,
+#album,
+#duration {
+    outline: 2px solid red;
+} */
 
 /* ******************************* SCROLLBAR STYLING ******************************* */
 
@@ -272,9 +287,9 @@ body {
 .card-container {
     position: sticky;
     width: 21vw;
-    height: calc((76px + 19px) * 5);
+    height: calc((76px + 15px) * 5);
     border-radius: 12px;
-    margin-top: -75px;
+    margin-top: -95px;
     /* margin-left: 70px; */
     
     background-color: rgba(0, 0, 0, 0.1);

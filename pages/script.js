@@ -1,0 +1,388 @@
+const content = {
+    pop: {
+        firstCover: "../assets/album-images/pop/billie.jpg",
+        firstTitle: "Billie Jean",
+        firstArtist: "Michael Jackson",
+        firstAlbum: "Thriller",
+        firstDuration: "4:54",
+
+        secondCover: "../assets/album-images/pop/prayer.jpg",
+        secondTitle: "Like a Prayer",
+        secondArtist: "Madonna",
+        secondAlbum: "Like a Prayer",
+        secondDuration: "5:42",
+
+        thirdCover: "../assets/album-images/pop/whitney.jpg",
+        thirdTitle: "I Will Always Love You",
+        thirdArtist: "Whitney Houston",
+        thirdAlbum: "The Bodyguard",
+        thirdDuration: "4:31",
+
+        fourthCover: "../assets/album-images/pop/purple.jpg",
+        fourthTitle: "Purple Rain",
+        fourthArtist: "Prince",
+        fourthAlbum: "Purple Rain",
+        fourthDuration: "8:41",
+
+        fifthCover: "../assets/album-images/pop/brit.jpg",
+        fifthTitle: "...Baby One Last Time",
+        fifthArtist: "Britney Spears",
+        fifthAlbum: "...Baby One More Time",
+        fifthDuration: "3:30",
+
+        sixthCover: "../assets/album-images/pop/borap.jpg",
+        sixthTitle: "Bohemian Rhapsody",
+        sixthArtist: "Queen",
+        sixthAlbum: "A Night at the Opera",
+        sixthDuration: "5:55",
+
+        seventhCover: "../assets/album-images/pop/dancing.jpg",
+        seventhTitle: "Dancing Queen",
+        seventhArtist: "ABBA",
+        seventhAlbum: "Arrival",
+        seventhDuration: "3:51",
+
+        eightCover: "../assets/album-images/pop/dreams.png",
+        eightTitle: "Dreams",
+        eightArtist: "Fleetwood Mac",
+        eightAlbum: "Rumours",
+        eightDuration: "4:17",
+
+        ninthCover: "../assets/album-images/pop/happy.jpg",
+        ninthTitle: "Happy",
+        ninthArtist: "Pharrell Williams",
+        ninthAlbum: "Girl",
+        ninthDuration: "3:35",
+
+        tenthCover: "../assets/album-images/pop/journey.jpg",
+        tenthTitle: "Don't Stop Believin'",
+        tenthArtist: "Journey",
+        tenthAlbum: "Escape",
+        tenthDuration: "4:11",
+
+        eleventhCover: "../assets/album-images/pop/shake.jpg",
+        eleventhTitle: "Shake It Off",
+        eleventhArtist: "Taylor Swift",
+        eleventhAlbum: "1989",
+        eleventhDuration: "3:39",
+
+        twelfthCover: "../assets/album-images/pop/single.png",
+        twelfthTitle: "Single Ladies (Put a Ring on It)",
+        twelfthArtist: "Beyoncé",
+        twelfthAlbum: "I Am… Sasha Fierce",
+        twelfthDuration: "3:13",
+
+        thirteenthCover: "../assets/album-images/pop/toxic.png",
+        thirteenthTitle: "Toxic",
+        thirteenthArtist: "Britney Spears",
+        thirteenthAlbum: "In the Zone",
+        thirteenthDuration: "3:19",
+
+        fourteenthCover: "../assets/album-images/pop/wonder.jpg",
+        fourteenthTitle: "Wonderwall",
+        fourteenthArtist: "Oasis",
+        fourteenthAlbum: "(What’s the Story) Morning Glory?",
+        fourteenthDuration: "4:18",
+
+        fifteenthCover: "../assets/album-images/pop/bright.jpg",
+        fifteenthTitle: "Mr. Brightside",
+        fifteenthArtist: "The Killers",
+        fifteenthAlbum: "Hot Fuss",
+        fifteenthDuration: "3:42"
+    },
+
+    rock: {
+        firstCover: "../assets/album-images/pop/rock/stair.jpg",
+        firstTitle: "Stairway to Heaven",
+        firstArtist: "Led Zeppelin",
+        firstAlbum: "Led Zeppelin IV",
+        firstDuration: "8:02",
+
+        secondCover: "../assets/album-images/pop/rock/living.jpg",
+        secondTitle: "Livin' on a Prayer",
+        secondArtist: "Bon Jovi",
+        secondAlbum: "Slippery When Wet (1986)",
+        secondDuration: "4:10",
+
+        thirdCover: "../assets/album-images/pop/rock/summer-69.jpg",
+        thirdTitle: "Summer of '69",
+        thirdArtist: "Bryan Adams",
+        thirdAlbum: "Reckless (1984)",
+        thirdDuration: "3:36",
+
+        fourthCover: "../assets/album-images/pop/rock/let-be.png",
+        fourthTitle: "Let It Be",
+        fourthArtist: "The Beatles",
+        fourthAlbum: "Let It Be",
+        fourthDuration: "4:03",
+
+        fifthCover: "../assets/album-images/pop/rock/hotel.jpg",
+        fifthTitle: "Hotel California",
+        fifthArtist: "Eagles",
+        fifthAlbum: "Hotel California",
+        fifthDuration: "6:30",
+
+        sixthCover: "../assets/album-images/pop/rock/paint.jpg",
+        sixthTitle: "Paint It Black",
+        sixthArtist: "The Rolling Stones",
+        sixthAlbum: "Aftermath",
+        sixthDuration: "3:45",
+
+        seventhCover: "../assets/album-images/pop/rock/imagine.jpg",
+        seventhTitle: "Imagine",
+        seventhArtist: "John Lennon",
+        seventhAlbum: "Imagine ",
+        seventhDuration: "3:03",
+
+        eightCover: "../assets/album-images/pop/rock/sweet-child.jpg",
+        eightTitle: "Sweet Child O’ Mine",
+        eightArtist: "Guns N’ Roses",
+        eightAlbum: "Appetite for Destruction",
+        eightDuration: "5:56",
+
+        ninthCover: "../assets/album-images/pop/rock/teen.jpg",
+        ninthTitle: "Smells Like Teen Spirit",
+        ninthArtist: "Nirvana",
+        ninthAlbum: "Nevermind",
+        ninthDuration: "5:01",
+
+        tenthCover: "../assets/album-images/pop/rock/numb.jpg",
+        tenthTitle: "Comfortably Numb'",
+        tenthArtist: "Pink Floyd",
+        tenthAlbum: "The Wall",
+        tenthDuration: "6:23",
+
+        eleventhCover: "../assets/album-images/pop/rock/born-run.jpg",
+        eleventhTitle: "Born to Run",
+        eleventhArtist: "Bruce Springsteen",
+        eleventhAlbum: "Born to Run",
+        eleventhDuration: "4:30",
+
+        twelfthCover: "../assets/album-images/pop/rock/purple.jpg",
+        twelfthTitle: "Purple Haze",
+        twelfthArtist: "Jimi Hendrix",
+        twelfthAlbum: "Are You Experienced",
+        twelfthDuration: "2:51",
+
+        thirteenthCover: "../assets/album-images/pop/rock/free-fallin.jpg",
+        thirteenthTitle: "Free Fallin",
+        thirteenthArtist: "Tom Petty",
+        thirteenthAlbum: "Full Moon Fever",
+        thirteenthDuration: "4:16",
+
+        fourteenthCover: "../assets/album-images/pop/rock/black.jpg",
+        fourteenthTitle: "Back in Black",
+        fourteenthArtist: "AC/DC",
+        fourteenthAlbum: "Back in Black",
+        fourteenthDuration: "4:15",
+
+        fifteenthCover: "../assets/album-images/pop/rock/dream-on.jpg",
+        fifteenthTitle: "Dream On",
+        fifteenthArtist: "Aerosmith",
+        fifteenthAlbum: "Aerosmith",
+        fifteenthDuration: "4:28"
+    },
+
+    classical: {
+
+    },
+
+    jazz: {
+        firstCover: "../assets/album-images/pop/jazz/five.jpg",
+        firstTitle: "Take Five",
+        firstArtist: "The Dave Brubeck Quartet",
+        firstAlbum: "Time Out",
+        firstDuration: "5:24",
+
+        secondCover: "../assets/album-images/pop/jazz/so-what.jpg",
+        secondTitle: "So What",
+        secondArtist: "Miles Davis",
+        secondAlbum: "Kind of Blue",
+        secondDuration: "9:22",
+
+        thirdCover: "../assets/album-images/pop/jazz/fav.jpg",
+        thirdTitle: "My Favorite Things",
+        thirdArtist: "John Coltrane",
+        thirdAlbum: "My Favorite Things",
+        thirdDuration: "13:41",
+
+        fourthCover: "../assets/album-images/pop/jazz/wonderful.jpg",
+        fourthTitle: "What a Wonderful World",
+        fourthArtist: "Louis Armstrong",
+        fourthAlbum: "What a Wonderful World",
+        fourthDuration: "2:21",
+
+        fifthCover: "../assets/album-images/pop/jazz/moon.jpg",
+        fifthTitle: "Fly Me to the Moon",
+        fifthArtist: "Frank Sinatra",
+        fifthAlbum: "It Might as Well Be Swing",
+        fifthDuration: "2:30",
+
+        sixthCover: "../assets/album-images/pop/jazz/all-billie.jpg",
+        sixthTitle: "All of Me",
+        sixthArtist: "Billie Holiday",
+        sixthAlbum: "Billie Holiday Sings",
+        sixthDuration: "3:05",
+
+        seventhCover: "../assets/album-images/pop/jazz/summertime.jpg",
+        seventhTitle: "Summertime",
+        seventhArtist: "Ella Fitzgerald & Louis Armstrong",
+        seventhAlbum: "Porgy and Bess",
+        seventhDuration: "4:58",
+
+        eightCover: "../assets/album-images/pop/jazz/autumn.jpg",
+        eightTitle: "Autumn Leaves",
+        eightArtist: "Cannonball Adderley",
+        eightAlbum: "Somethin’ Else",
+        eightDuration: "10:58",
+
+        ninthCover: "../assets/album-images/pop/jazz/round.jpg",
+        ninthTitle: "Round Midnight",
+        ninthArtist: "Thelonious Monk",
+        ninthAlbum: "'Round Midnight",
+        ninthDuration: "6:58",
+
+        tenthCover: "../assets/album-images/pop/jazz/feeling.png",
+        tenthTitle: "Feeling Good",
+        tenthArtist: "Nina Simone",
+        tenthAlbum: "I Put a Spell on You",
+        tenthDuration: "2:54",
+
+        eleventhCover: "../assets/album-images/pop/jazz/love-supreme.jpg",
+        eleventhTitle: "A Love Supreme, Pt. I: Acknowledgement",
+        eleventhArtist: "John Coltrane",
+        eleventhAlbum: "A Love Supreme",
+        eleventhDuration: "7:42",
+
+        twelfthCover: "../assets/album-images/pop/jazz/bluegreen.jpg",
+        twelfthTitle: "Blue in Green",
+        twelfthArtist: "Miles Davis",
+        twelfthAlbum: "Kind of Blue",
+        twelfthDuration: "5:37",
+
+        thirteenthCover: "../assets/album-images/pop/jazz/sentimental.jpg",
+        thirteenthTitle: "In a Sentimental Mood",
+        thirteenthArtist: "Duke Ellington & John Coltrane",
+        thirteenthAlbum: "Duke Ellington & John Coltrane",
+        thirteenthDuration: "4:15",
+
+        fourteenthCover: "../assets/album-images/pop/jazz/strange.jpg",
+        fourteenthTitle: "Strange Fruit",
+        fourteenthArtist: "Billie Holiday",
+        fourteenthAlbum: "Commodore Recordings",
+        fourteenthDuration: "3:10",
+
+        fifteenthCover: "../assets/album-images/pop/jazz/misty.jpg",
+        fifteenthTitle: "Misty",
+        fifteenthArtist: "Erroll Garner",
+        fifteenthAlbum: "Concert by the Sea",
+        fifteenthDuration: "5:45"
+    },
+
+    indie: {
+
+    }
+};
+
+function loadContent(section){
+    document.querySelector(".firstCover").src = content[section].firstCover;
+    document.querySelector(".firstTitle").textContent = content[section].firstTitle;
+    document.querySelector(".firstArtist").textContent = content[section].firstArtist;
+    document.querySelector(".firstAlbum").textContent = content[section].firstAlbum;
+    document.querySelector(".firstDuration").textContent = content[section].firstDuration;
+
+    document.querySelector(".secondCover").src = content[section].secondCover;
+    document.querySelector(".secondTitle").textContent = content[section].secondTitle;
+    document.querySelector(".secondArtist").textContent = content[section].secondArtist;
+    document.querySelector(".secondAlbum").textContent = content[section].secondAlbum;
+    document.querySelector(".secondDuration").textContent = content[section].secondDuration;
+
+    document.querySelector(".thirdCover").src = content[section].thirdCover;
+    document.querySelector(".thirdTitle").textContent = content[section].thirdTitle;
+    document.querySelector(".thirdArtist").textContent = content[section].thirdArtist;
+    document.querySelector(".thirdAlbum").textContent = content[section].thirdAlbum;
+    document.querySelector(".thirdDuration").textContent = content[section].thirdDuration;
+
+    document.querySelector(".fourthCover").src = content[section].fourthCover;
+    document.querySelector(".fourthTitle").textContent = content[section].fourthTitle;
+    document.querySelector(".fourthArtist").textContent = content[section].fourthArtist;
+    document.querySelector(".fourthAlbum").textContent = content[section].fourthAlbum;
+    document.querySelector(".fourthDuration").textContent = content[section].fourthDuration;
+
+    document.querySelector(".fifthCover").src = content[section].fifthCover;
+    document.querySelector(".fifthTitle").textContent = content[section].fifthTitle;
+    document.querySelector(".fifthArtist").textContent = content[section].fifthArtist;
+    document.querySelector(".fifthAlbum").textContent = content[section].fifthAlbum;
+    document.querySelector(".fifthDuration").textContent = content[section].fifthDuration;
+
+
+    document.querySelector(".sixthCover").src = content[section].sixthCover;
+    document.querySelector(".sixthTitle").textContent = content[section].sixthTitle;
+    document.querySelector(".sixthArtist").textContent = content[section].sixthArtist;
+    document.querySelector(".sixthAlbum").textContent = content[section].sixthAlbum;
+    document.querySelector(".sixthDuration").textContent = content[section].sixthDuration;
+
+    document.querySelector(".seventhCover").src = content[section].seventhCover;
+    document.querySelector(".seventhTitle").textContent = content[section].seventhTitle;
+    document.querySelector(".seventhArtist").textContent = content[section].seventhArtist;
+    document.querySelector(".seventhAlbum").textContent = content[section].seventhAlbum;
+    document.querySelector(".seventhDuration").textContent = content[section].seventhDuration;
+
+    document.querySelector(".eightCover").src = content[section].eightCover;
+    document.querySelector(".eightTitle").textContent = content[section].eightTitle;
+    document.querySelector(".eightArtist").textContent = content[section].eightArtist;
+    document.querySelector(".eightAlbum").textContent = content[section].eightAlbum;
+    document.querySelector(".eightDuration").textContent = content[section].eightDuration;
+
+    document.querySelector(".ninthCover").src = content[section].ninthCover;
+    document.querySelector(".ninthTitle").textContent = content[section].ninthTitle;
+    document.querySelector(".ninthArtist").textContent = content[section].ninthArtist;
+    document.querySelector(".ninthAlbum").textContent = content[section].ninthAlbum;
+    document.querySelector(".ninthDuration").textContent = content[section].ninthDuration;
+
+    document.querySelector(".tenthCover").src = content[section].tenthCover;
+    document.querySelector(".tenthTitle").textContent = content[section].tenthTitle;
+    document.querySelector(".tenthArtist").textContent = content[section].tenthArtist;
+    document.querySelector(".tenthAlbum").textContent = content[section].tenthAlbum;
+    document.querySelector(".tenthDuration").textContent = content[section].tenthDuration;
+
+
+    document.querySelector(".eleventhCover").src = content[section].eleventhCover;
+    document.querySelector(".eleventhTitle").textContent = content[section].eleventhTitle;
+    document.querySelector(".eleventhArtist").textContent = content[section].eleventhArtist;
+    document.querySelector(".eleventhAlbum").textContent = content[section].eleventhAlbum;
+    document.querySelector(".eleventhDuration").textContent = content[section].eleventhDuration;
+
+    document.querySelector(".twelfthCover").src = content[section].twelfthCover;
+    document.querySelector(".twelfthTitle").textContent = content[section].twelfthTitle;
+    document.querySelector(".twelfthArtist").textContent = content[section].twelfthArtist;
+    document.querySelector(".twelfthAlbum").textContent = content[section].twelfthAlbum;
+    document.querySelector(".twelfthDuration").textContent = content[section].twelfthDuration;
+
+    document.querySelector(".thirteenthCover").src = content[section].thirteenthCover;
+    document.querySelector(".thirteenthTitle").textContent = content[section].thirteenthTitle;
+    document.querySelector(".thirteenthArtist").textContent = content[section].thirteenthArtist;
+    document.querySelector(".thirteenthAlbum").textContent = content[section].thirteenthAlbum;
+    document.querySelector(".thirteenthDuration").textContent = content[section].thirteenthDuration;
+
+    document.querySelector(".fourteenthCover").src = content[section].fourteenthCover;
+    document.querySelector(".fourteenthTitle").textContent = content[section].fourteenthTitle;
+    document.querySelector(".fourteenthArtist").textContent = content[section].fourteenthArtist;
+    document.querySelector(".fourteenthAlbum").textContent = content[section].fourteenthAlbum;
+    document.querySelector(".fourteenthDuration").textContent = content[section].fourteenthDuration;
+
+    document.querySelector(".fifteenthCover").src = content[section].fifteenthCover;
+    document.querySelector(".fifteenthTitle").textContent = content[section].fifteenthTitle;
+    document.querySelector(".fifteenthArtist").textContent = content[section].fifteenthArtist;
+    document.querySelector(".fifteenthAlbum").textContent = content[section].fifteenthAlbum;
+    document.querySelector(".fifteenthDuration").textContent = content[section].fifteenthDuration;
+}
+
+var links = document.querySelectorAll(".navbar-list a");
+
+for(var i = 0; i < links.length; i++){
+    links[i].addEventListener("click", function (e){
+        e.preventDefault();
+        loadContent(this.dataset.section);
+    });
+}

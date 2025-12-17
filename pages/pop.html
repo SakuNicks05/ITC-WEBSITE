@@ -11,156 +11,165 @@
     <div class="gradient-background">
         <div class="gradient-container">
             <div class="grad-1"></div>
-        </div>
+        </div><meta name="viewport" content="width=device-width, initial-scale=1.0">
     </div>
 
     <h3 id="main-title">MixUp</h3>
 
     <ul class="navbar-list">
-        <li><a href="pop.html">Pop</a></li>
-        <li><a href="rock.html">Rock</a></li>
-        <li><a href="classical.html">Classical</a></li>
-        <li><a href="jazz.html">Jazz</a></li>
-        <li><a href="indie.html">Indie</a></li>
+        <li><a href="#" data-section="pop">Pop</a></li>
+        <li><a href="#" data-section="rock">Rock</a></li>
+        <li><a href="#" data-section="classical">Classical</a></li>
+        <li><a href="#" data-section="jazz">Jazz</a></li>
+        <li><a href="#" data-section="indie">Indie</a></li>
     </ul>
 
     <h1 id="top-songs">Top Songs</h1>
 
     <div class="song-info-container">
-        <div id="number"></div>
-        <div id="cover"></div>
         <div id="title">Title</div>
         <div id="album">Album</div>
         <div id="duration">Duration</div>
-        <div id="play"></div>
     </div>
 
     <div class="divider">
         <hr>
     </div>
 
+    <audio id="audio-player"></audio>
+
     <div class="content-container">
         <ol class="songlist-container">
             <li class="song-box">
                 <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/billie.jpg" alt="Billie Jean">            
-                <p class="song-info"><span class="song-title">Billie Jean</span> <br> <span class="artist">Michael Jackson</span></p>
-                <span class="album">Thriller</span>
-                <span class="duration">4:54</span>
+                <img class="album-cover firstCover" src="../assets/album-images/pop/billie.jpg" alt="Billie Jean">            
+                <p class="song-info"><span class="song-title firstTitle">Billie Jean</span> <br> <span class="artist firstArtist">Michael Jackson</span></p>
+                <span class="album firstAlbum">Thriller</span>
+                <span class="duration firstDuration">4:54</span>
+                <img class="play" 
+                     src="../assets/icons/play.png"
+                     data-audio="../assets/audio/pop/billie.mp3">
+            </li>
+            <li class="song-box">
+                <span class="song-number"></span>
+                <img class="album-cover secondCover" src="../assets/album-images/pop/prayer.jpg" alt="Like a Prayer">
+                <p class="song-info"><span class="song-title secondTitle">Like a Prayer</span> <br> <span class="artist secondArtist">Madonna</span></p>
+                <span class="album secondAlbum">Like a Prayer</span>
+                <span class="duration secondDuration">5:42</span>
+                <img class="play" 
+                     src="../assets/icons/play.png"
+                     data-audio="../assets/audio/pop/prayer.mp3">
+            </li>
+            <li class="song-box">
+                <span class="song-number"></span>
+                <img class="album-cover thirdCover" src="../assets/album-images/pop/whitney.jpg" alt="I Will Always Love You">
+                <p class="song-info"><span class="song-title thirdTitle">I Will Always Love You</span> <br> <span class="artist thirdArtist">Whitney Houston</span></p>
+                <span class="album thirdAlbum">The Bodyguard</span>
+                <span class="duration thirdDuration">4:31</span>
+                <img class="play" 
+                     src="../assets/icons/play.png"
+                     data-audio="../assets/audio/pop/will-love.mp3">
+            </li>
+            <li class="song-box">
+                <span class="song-number"></span>
+                <img class="album-cover fourthCover" src="../assets/album-images/pop/purple.jpg" alt="Purple Rain">
+                <p class="song-info"><span class="song-title fourthTitle">Purple Rain</span> <br> <span class="artist fourthArtist">Prince</span></p>
+                <span class="album fourthAlbum">Purple Rain</span>
+                <span class="duration fourthDuration">8:41</span>
+                <img class="play" 
+                     src="../assets/icons/play.png"
+                     data-audio="../assets/audio/pop/purple.mp3">
+            </li>
+            <li class="song-box">
+                <span class="song-number"></span>
+                <img class="album-cover fifthCover" src="../assets/album-images/pop/brit.jpg" alt="...Baby One Last Time">
+                <p class="song-info"><span class="song-title fifthTitle">...Baby One Last Time</span> <br> <span class="artist fifthArtist">Britney Spears</span></p>
+                <span class="album fifthAlbum">...Baby One More Time</span>
+                <span class="duration fifthDuration">3:30</span>
+                <img class="play" 
+                     src="../assets/icons/play.png"
+                     data-audio="../assets/audio/pop/baby-one.mp3">
+            </li>
+
+            <li class="song-box">
+                <span class="song-number"></span>
+                <img class="album-cover sixthCover" src="../assets/album-images/pop/borap.jpg" alt="Bohemian Rhapsody">            
+                <p class="song-info"><span class="song-title sixthTitle">Bohemian Rhapsody</span> <br> <span class="artist sixthArtist">Queen</span></p>
+                <span class="album sixthAlbum">A Night at the Opera</span>
+                <span class="duratio sixthDuration">5:55</span>
                 <img class="play" src="../assets/icons/play.png">
             </li>
             <li class="song-box">
                 <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/prayer.jpg" alt="Like a Prayer">
-                <p class="song-info"><span class="song-title">Like a Prayer</span> <br> <span class="artist">Madonna</span></p>
-                <span class="album">Like a Prayer</span>
-                <span class="duration">5:42</span>
+                <img class="album-cover seventhCover" src="../assets/album-images/pop/bright.jpg" alt="Mr. Brightside">
+                <p class="song-info"><span class="song-title seventhTitle">Mr. Brightside</span> <br> <span class="artist seventhArtist">The Killers</span></p>
+                <span class="album seventhAlbum">Hot Fuss</span>
+                <span class="duration seventhDuration">3:42</span>
                 <img class="play" src="../assets/icons/play.png">
             </li>
             <li class="song-box">
                 <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/whitney.jpg" alt="I Will Always Love You">
-                <p class="song-info"><span class="song-title">I Will Always Love You</span> <br> <span class="artist">Whitney Houston</span></p>
-                <span class="album">The Bodyguard</span>
-                <span class="duration">4:31</span>
+                <img class="album-cover eightCover" src="../assets/album-images/pop/dancing.jpg" alt="Dancing Queen">
+                <p class="song-info"><span class="song-title eightTitle">Dancing Queen</span> <br> <span class="artist eightArtist">ABBA</span></p>
+                <span class="album eightAlbum">Arrival</span>
+                <span class="duration eightDuration">3:51</span>
                 <img class="play" src="../assets/icons/play.png">
             </li>
             <li class="song-box">
                 <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/purple.jpg" alt="Purple Rain">
-                <p class="song-info"><span class="song-title">Purple Rain</span> <br> <span class="artist">Prince</span></p>
-                <span class="album">Purple Rain</span>
-                <span class="duration">8:41</span>
+                <img class="album-cover ninthCover" src="../assets/album-images/pop/dreams.png" alt="Dreams">
+                <p class="song-info"><span class="song-title ninthTitle">Dreams</span> <br> <span class="artist ninthArtist">Fleetwood Mac</span></p>
+                <span class="album ninthAlbum">Rumours</span>
+                <span class="duration ninthDuration">4:17</span>
                 <img class="play" src="../assets/icons/play.png">
             </li>
             <li class="song-box">
                 <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/brit.jpg" alt="...Baby One Last Time">
-                <p class="song-info"><span class="song-title">...Baby One Last Time</span> <br> <span class="artist">Britney Spears</span></p>
-                <span class="album">...Baby One More Time</span>
-                <span class="duration">3:30</span>
+                <img class="album-cover tenthCover" src="../assets/album-images/pop/happy.jpg" alt="Happy">
+                <p class="song-info"><span class="song-title tenthTitle">Happy</span> <br> <span class="artist tenthArtist">Pharrell Williams</span></p>
+                <span class="album tenthAlbum">Girl</span>
+                <span class="duration tenthDuration">3:53</span>
                 <img class="play" src="../assets/icons/play.png">
             </li>
 
             <li class="song-box">
                 <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/borap.jpg" alt="Bohemian Rhapsody">            
-                <p class="song-info"><span class="song-title">Bohemian Rhapsody</span> <br> <span class="artist">Queen</span></p>
-                <span class="album">A Night at the Opera</span>
-                <span class="duration">5:55</span>
+                <img class="album-cover eleventhCover" src="../assets/album-images/pop/journey.jpg" alt="Don't Stop Believin'">            
+                <p class="song-info"><span class="song-title eleventhTitle">Don't Stop Believin'</span> <br> <span class="artist eleventhArtist">Journey</span></p>
+                <span class="album eleventhAlbum">Escape</span>
+                <span class="duration eleventhDuration">4:11</span>
                 <img class="play" src="../assets/icons/play.png">
             </li>
             <li class="song-box">
                 <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/bright.jpg" alt="Mr. Brightside">
-                <p class="song-info"><span class="song-title">Mr. Brightside</span> <br> <span class="artist">The Killers</span></p>
-                <span class="album">Hot Fuss</span>
-                <span class="duration">3:42</span>
+                <img class="album-cover twelfthCover" src="../assets/album-images/pop/shake.jpg" alt="Shake It Off">
+                <p class="song-info"><span class="song-title twelfthTitle">Shake It Off</span> <br> <span class="artist twelfthArtist">Taylor Swift</span></p>
+                <span class="album twelfthAlbum">1989</span>
+                <span class="duration twelfthDuration">3:39</span>
                 <img class="play" src="../assets/icons/play.png">
             </li>
             <li class="song-box">
                 <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/dancing.jpg" alt="Dancing Queen">
-                <p class="song-info"><span class="song-title">Dancing Queen</span> <br> <span class="artist">ABBA</span></p>
-                <span class="album">Arrival</span>
-                <span class="duration">3:51</span>
+                <img class="album-cover thirteenthCover" src="../assets/album-images/pop/single.png" alt="Single Ladies (Put a Ring on It)">
+                <p class="song-info"><span class="song-title thirteenthTitle">Single Ladies (Put a Ring on It)</span> <br> <span class="artist thirteenthArtist">Beyoncé</span></p>
+                <span class="album thirteenthAlbum">I Am… Sasha Fierce</span>
+                <span class="duration thirteenthDuration">3:13</span>
                 <img class="play" src="../assets/icons/play.png">
             </li>
             <li class="song-box">
                 <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/dreams.png" alt="Dreams">
-                <p class="song-info"><span class="song-title">Dreams</span> <br> <span class="artist">Fleetwood Mac</span></p>
-                <span class="album">Rumours</span>
-                <span class="duration">4:17</span>
+                <img class="album-cover fourteenthCover" src="../assets/album-images/pop/toxic.png" alt="Toxic">
+                <p class="song-info"><span class="song-title fourteenthTitle">Toxic</span> <br> <span class="artist fourteenthArtist">Britney Spears</span></p>
+                <span class="album fourteenthAlbum">In the Zone</span>
+                <span class="duration fourteenthDuration">3:19</span>
                 <img class="play" src="../assets/icons/play.png">
             </li>
             <li class="song-box">
                 <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/happy.jpg" alt="Happy">
-                <p class="song-info"><span class="song-title">Happy</span> <br> <span class="artist">Pharrell Williams</span></p>
-                <span class="album">Girl</span>
-                <span class="duration">3:53</span>
-                <img class="play" src="../assets/icons/play.png">
-            </li>
-
-            <li class="song-box">
-                <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/journey.jpg" alt="Don't Stop Believin'">            
-                <p class="song-info"><span class="song-title">Don't Stop Believin'</span> <br> <span class="artist">Journey</span></p>
-                <span class="album">Escape</span>
-                <span class="duration">4:11</span>
-                <img class="play" src="../assets/icons/play.png">
-            </li>
-            <li class="song-box">
-                <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/shake.jpg" alt="Shake It Off">
-                <p class="song-info"><span class="song-title">Shake It Off</span> <br> <span class="artist">Taylor Swift</span></p>
-                <span class="album">1989</span>
-                <span class="duration">3:39</span>
-                <img class="play" src="../assets/icons/play.png">
-            </li>
-            <li class="song-box">
-                <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/single.png" alt="Single Ladies (Put a Ring on It)">
-                <p class="song-info"><span class="song-title">Single Ladies (Put a Ring on It)</span> <br> <span class="artist">Beyoncé</span></p>
-                <span class="album">I Am… Sasha Fierce</span>
-                <span class="duration">3:13</span>
-                <img class="play" src="../assets/icons/play.png">
-            </li>
-            <li class="song-box">
-                <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/toxic.png" alt="Toxic">
-                <p class="song-info"><span class="song-title">Toxic</span> <br> <span class="artist">Britney Spears</span></p>
-                <span class="album">In the Zone</span>
-                <span class="duration">3:19</span>
-                <img class="play" src="../assets/icons/play.png">
-            </li>
-            <li class="song-box">
-                <span class="song-number"></span>
-                <img class="album-cover" src="../assets/album-images/pop/wonder.jpg" alt="Wonderwall">
-                <p class="song-info"><span class="song-title">Wonderwall</span> <br> <span class="artist">Oasis</span></p>
-                <span class="album">(What’s the Story) Morning Glory?</span>
-                <span class="duration">4:18</span>
+                <img class="album-cover fifteenthCover" src="../assets/album-images/pop/wonder.jpg" alt="Wonderwall">
+                <p class="song-info"><span class="song-title fifteenthTitle">Wonderwall</span> <br> <span class="artist fifteenthArtist">Oasis</span></p>
+                <span class="album fifteenthAlbum">(What’s the Story) Morning Glory?</span>
+                <span class="duration fifteenthDuration">4:18</span>
                 <img class="play" src="../assets/icons/play.png" >
             </li>
         </ol>
@@ -173,6 +182,6 @@
             <img id="play-pause" src="../assets/icons/play.png">
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>

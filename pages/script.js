@@ -280,7 +280,95 @@ const content = {
     },
 
     indie: {
+        firstCover: "../assets/album-images/pop/indie/rep.jpg",
+        firstTitle: "Reptilia",
+        firstArtist: "The Strokes",
+        firstAlbum: "Room on Fire",
+        firstDuration: "3:41",
 
+        secondCover: "../assets/album-images/pop/indie/take.jpg",
+        secondTitle: "Take Me Out",
+        secondArtist: "Franz Ferdinand",
+        secondAlbum: "Franz Ferdinand",
+        secondDuration: "3:57",
+
+        thirdCover: "../assets/album-images/pop/indie/arctic.png",
+        thirdTitle: "Do I Wanna Know?",
+        thirdArtist: "Arctic Monkeys",
+        thirdAlbum: "AM",
+        thirdDuration: "4:32",
+
+        fourthCover: "../assets/album-images/pop/indie/no-car.jpg",
+        fourthTitle: "No Cars Go",
+        fourthArtist: "Arcade Fire",
+        fourthAlbum: "Neon Bible",
+        fourthDuration: "5:43",
+
+        fifthCover: "../assets/album-images/pop/indie/kids.jpg",
+        fifthTitle: "Kids",
+        fifthArtist: "MGMT",
+        fifthAlbum: "Oracular Spectacular",
+        fifthDuration: "5:02",
+
+        sixthCover: "../assets/album-images/pop/indie/phoenix.jpg",
+        sixthTitle: "Lisztomania",
+        sixthArtist: "Phoenix",
+        sixthAlbum: "Wolfgang Amadeus Phoenix",
+        sixthDuration: "4:02",
+
+        seventhCover: "../assets/album-images/pop/indie/height.jpg",
+        seventhTitle: "Such Great Heights",
+        seventhArtist: "The Postal Service",
+        seventhAlbum: "Give Up",
+        seventhDuration: "4:26",
+
+        eightCover: "../assets/album-images/pop/indie/ho.png",
+        eightTitle: "Ho Hey",
+        eightArtist: "The Lumineers",
+        eightAlbum: "The Lumineers",
+        eightDuration: "2:43",
+
+        ninthCover: "../assets/album-images/pop/indie/electric.jpg",
+        ninthTitle: "Electric Feel",
+        ninthArtist: "MGMT",
+        ninthAlbum: "Oracular Spectacular",
+        ninthDuration: "3:49",
+
+        tenthCover: "../assets/album-images/pop/indie/skin.jpg",
+        tenthTitle: "Skinny Love",
+        tenthArtist: "Bon Iver",
+        tenthAlbum: "For Emma, Forever Ago",
+        tenthDuration: "3:59",
+
+        eleventhCover: "../assets/album-images/pop/indie/oxford.jpg",
+        eleventhTitle: "Oxford Comma",
+        eleventhArtist: "Vampire Weekend",
+        eleventhAlbum: "Vampire Weekend",
+        eleventhDuration: "3:31",
+
+        twelfthCover: "../assets/album-images/pop/indie/1901.png",
+        twelfthTitle: "1901",
+        twelfthArtist: "Phoenix",
+        twelfthAlbum: "Wolfgang Amadeus Phoenix",
+        twelfthDuration: "3:31",
+
+        thirteenthCover: "../assets/album-images/pop/indie/mine.jpg",
+        thirteenthTitle: "R U Mine?",
+        thirteenthArtist: "Arctic Monkeys",
+        thirteenthAlbum: "AM",
+        thirteenthDuration: "3:21",
+
+        fourteenthCover: "../assets/album-images/pop/indie/middle.jpg",
+        fourteenthTitle: "The Middle",
+        fourteenthArtist: "Jimmy Eat World",
+        fourteenthAlbum: "Bleed American",
+        fourteenthDuration: "2:45",
+
+        fifteenthCover: "",
+        fifteenthTitle: "",
+        fifteenthArtist: "",
+        fifteenthAlbum: "",
+        fifteenthDuration: ""
     }
 };
 

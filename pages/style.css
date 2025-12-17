@@ -70,6 +70,24 @@ body {
     padding: 10px 0px 10px 35px;
 }
 
+#mode {
+    font-family: 'Konkhmer Sleokchher';
+    text-align: center;
+    position: relative;
+    display: sticky;
+    border-style: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+#mode:hover {
+    background-color: rgb(31, 29, 29);
+    color: white;
+}
+
 /* ******************************* NAVBAR STYLING ******************************* */
 
 .navbar-list {

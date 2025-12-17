@@ -5,6 +5,7 @@ const content = {
         firstArtist: "Michael Jackson",
         firstAlbum: "Thriller",
         firstDuration: "4:54",
+        firstAudio: "../assets/audio/pop/billie.mp3",
 
         secondCover: "../assets/album-images/pop/prayer.jpg",
         secondTitle: "Like a Prayer",
@@ -184,7 +185,96 @@ const content = {
     },
 
     classical: {
+        firstCover: "../assets/album-images/pop/classical/symph5.jpg",
+        firstTitle: "Symphony No. 5 (I)",
+        firstArtist: "Beethoven",
+        firstAlbum: "Symphony No. 5",
+        firstDuration: "7:30",
+        firstAudio: "../assets/audio/pop/billie.mp3",
 
+        secondCover: "../assets/album-images/pop/classical/clair.jpg",
+        secondTitle: "Clair de Lune",
+        secondArtist: "Debussy",
+        secondAlbum: "Suite bergamasque",
+        secondDuration: "5:00",
+
+        thirdCover: "../assets/album-images/pop/classical/canon.jpg",
+        thirdTitle: "Canon in D",
+        thirdArtist: "Pachelbel ",
+        thirdAlbum: "Canon and Gigue",
+        thirdDuration: "6:00",
+
+        fourthCover: "../assets/album-images/pop/classical/season.jpg",
+        fourthTitle: "The Four Seasons: Spring",
+        fourthArtist: "Vivaldi",
+        fourthAlbum: "The Four Seasons",
+        fourthDuration: "3:30",
+
+        fifthCover: "../assets/album-images/pop/classical/kleine.jpg",
+        fifthTitle: "Eine kleine Nachtmusik",
+        fifthArtist: "Mozart",
+        fifthAlbum: "Serenade No. 13",
+        fifthDuration: "5:50",
+
+        sixthCover: "../assets/album-images/pop/classical/moonlight.jpg",
+        sixthTitle: "Moonlight Sonata (I)",
+        sixthArtist: "Beethoven",
+        sixthAlbum: "Piano Sonata No. 14",
+        sixthDuration: "5:15",
+
+        seventhCover: "../assets/album-images/pop/classical/ave.jpg",
+        seventhTitle: "Ave Maria",
+        seventhArtist: "Schubert",
+        seventhAlbum: "Ellens dritter Gesang",
+        seventhDuration: "4:30",
+
+        eightCover: "../assets/album-images/pop/classical/swan.jpg",
+        eightTitle: "Swan Lake (Theme)",
+        eightArtist: "Tchaikovsky",
+        eightAlbum: "Swan Lake",
+        eightDuration: "4:00",
+
+        ninthCover: "../assets/album-images/pop/classical/ride.jpg",
+        ninthTitle: "Ride of the Valkyries",
+        ninthArtist: "Wagner",
+        ninthAlbum: "Die Walküre",
+        ninthDuration: "5:00",
+
+        tenthCover: "../assets/album-images/pop/classical/bolero.jpg",
+        tenthTitle: "Boléro",
+        tenthArtist: "Ravel",
+        tenthAlbum: "Boléro",
+        tenthDuration: "15:00",
+
+        eleventhCover: "../assets/album-images/pop/classical/gym.jpg",
+        eleventhTitle: "Gymnopédie No. 1",
+        eleventhArtist: "Erik Satie",
+        eleventhAlbum: "Gymnopédies",
+        eleventhDuration: "3:30",
+
+        twelfthCover: "../assets/album-images/pop/classical/braden.jpg",
+        twelfthTitle: "Brandenburg Concerto No. 3",
+        twelfthArtist: "Bach",
+        twelfthAlbum: "Brandenburg Concertos",
+        twelfthDuration: "6:30",
+
+        thirteenthCover: "../assets/album-images/pop/classical/air.jpg",
+        thirteenthTitle: "Air on the G String",
+        thirteenthArtist: "Bach",
+        thirteenthAlbum: "Orchestral Suite No. 3",
+        thirteenthDuration: "5:00",
+
+        fourteenthCover: "../assets/album-images/pop/classical/peer.jpg",
+        fourteenthTitle: "Peer Gynt: Morning Mood",
+        fourteenthArtist: "Grieg",
+        fourteenthAlbum: "Peer Gynt Suite",
+        fourteenthDuration: "4:00",
+
+        fifteenthCover: "../assets/album-images/pop/classical/adagio.jpg",
+        fifteenthTitle: "Adagio for Strings",
+        fifteenthArtist: "Samuel Barber",
+        fifteenthAlbum: "Adagio for Strings",
+        fifteenthDuration: "8:00"
     },
 
     jazz: {
@@ -253,7 +343,7 @@ const content = {
         eleventhArtist: "John Coltrane",
         eleventhAlbum: "A Love Supreme",
         eleventhDuration: "7:42",
-
+ 
         twelfthCover: "../assets/album-images/pop/jazz/bluegreen.jpg",
         twelfthTitle: "Blue in Green",
         twelfthArtist: "Miles Davis",
@@ -468,9 +558,53 @@ function loadContent(section){
 
 var links = document.querySelectorAll(".navbar-list a");
 
-for(var i = 0; i < links.length; i++){
+for(var i = 0; i < links.length; i++) {
     links[i].addEventListener("click", function (e){
         e.preventDefault();
         loadContent(this.dataset.section);
     });
 }
+
+var audio = document.getElementById("audio-player");
+var playButton = document.querySelectorAll(".play");
+var currentButton = null;
+
+for(var i = 0; i < playButton.length; i++) {
+    playButton[i].addEventListener("click", function() {
+        var currentSong = this.dataset.audio;
+
+        // IF DIFFERENT SONG IS CLICKED
+        if(audio.currentSrc !== new URL(currentSong, location.href).href){
+            if(currentButton){
+                currentButton.src = "../assets/icons/play.png";
+            }
+
+            audio.src = currentSong;
+            audio.play();
+
+            this.src = "../assets/icons/pause.png";
+            currentButton = this;
+            return;
+        }
+
+        // SAME SONG TOGGLE
+        if(audio.paused){
+            audio.play();
+            this.src = "../assets/icons/pause.png";
+        } else {
+            audio.pause();
+            this.src = "../assets/icons/play.png";
+        }
+
+        // CHECKING IF DIFFERENT PAGE
+
+
+    });
+}
+
+audio.addEventListener("ended", function() {
+    if(currentButton) {
+        currentButton.src = "../assets/icons/play.png";
+        currentButton = null;
+    }
+});

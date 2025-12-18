@@ -11,11 +11,13 @@
     <div class="gradient-background">
         <div class="gradient-container">
             <div class="grad-1"></div>
-        </div><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </div>
     </div>
 
-    <h3 id="main-title">MixUp</h3>
-    <button id="mode">Dark Mode</button>
+    <div class="head-container">
+        <h3 id="main-title">MixUp</h3>
+        <button id="mode">Dark Mode</button>
+    </div>
 
     <ul class="navbar-list">
         <li><a href="#" data-section="pop">Pop</a></li>
@@ -180,7 +182,24 @@
             <p id="card-title">Billie Jean</p>
             <p id="card-artist"><i>Michael Jackson</i></p>
             <p id="card-song-album">Thriller</p>
-            <img id="play-pause" src="../assets/icons/play.png">
+            <div class="icon-container">
+                <img class="icons other" src="../assets/icons/repeat.png">
+                <img class="icons arrow" src="../assets/icons/left.png">
+                <img class="icons play-icon" src="../assets/icons/play.png">
+                <img class="icons arrow" src="../assets/icons/right.png">
+                <img class="icons other" src="../assets/icons/download.png">
+            </div>
+            <br>
+            <div class="timestamp-container">
+                <span class="element time-stamp current-time">0:00</span>
+                <input
+                    class="element bar"
+                    type="range"
+                    value="0"
+                    min="0"
+                    max="100">
+                <span class="element time-stamp total-time">0:00</span>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

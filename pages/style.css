@@ -55,10 +55,12 @@ body {
 
 #main-title {
     position: relative;
+    display: inline-block;
     font-family: 'Krona One', sans-serif;
     font-weight: lighter;
     text-align: center;
-    margin: 16px 0;
+    margin: 16px auto;
+    left: 47%;
     color: black;
     z-index: 10;
 }
@@ -70,18 +72,25 @@ body {
     padding: 10px 0px 10px 35px;
 }
 
+.head-container {
+    width: 100%;
+    white-space: nowrap;
+}
+
 #mode {
+    padding: 5px 18px;
+    font-size: 10px;
     font-family: 'Konkhmer Sleokchher';
     text-align: center;
     position: relative;
-    display: sticky;
     border-style: none;
-    padding: 8px 10px;
     border-radius: 10px;
     color: white;
     background-color: black;
     cursor: pointer;
-}
+    float: right;
+    margin: 15px 25px 15px 0px;
+}   
 
 #mode:hover {
     background-color: rgb(31, 29, 29);
@@ -180,7 +189,7 @@ body {
 .content-container {
     display: flex;
     gap: 25px;
-    height: calc(100vh - 250px);
+    height: calc(100vh - 270px);
 }
 
 .songlist-container {
@@ -308,6 +317,7 @@ body {
     height: calc((76px + 15px) * 5);
     border-radius: 12px;
     margin-top: -95px;
+    margin-bottom: 15px;
     /* margin-left: 70px; */
     
     background-color: rgba(0, 0, 0, 0.1);
@@ -352,4 +362,60 @@ body {
 #card-song-album {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.icon-container {
+    text-align: center;
+}
+
+.icon-container img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icons {
+    padding: 10px 5px 0px 5px;
+}
+
+.play-icon {
+    width: 42px;
+}
+
+.arrow {
+    width: 30px;
+}
+
+.other {
+    width: 20px;
+}
+
+.timestamp-container {
+    display: flex;
+    font-family: 'Kumbh Sans';
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    background: white;
+    width: 170px;
+    height: 6px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.timestamp-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+}
+
+.timestamp-container element {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background: pink;
 }

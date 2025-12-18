@@ -681,5 +681,3 @@ audio.addEventListener("ended", function() {
         currentButton = null;
     }
 });
-
-var darkText = 

@@ -36,8 +36,8 @@ body {
     margin: auto;
     width: 100vw;
     height: 100vh;
-    background: conic-gradient(from 0deg, #008BCF, #F5ECEF, #9d59bd, #d4a4d8, #008BCF, #F5ECEF, #6d467c, #F6EDF0, #dca8e0);
-    /* background: conic-gradient(from 0deg, #03788C, #18234d, #291949, #6D017B, #0E142A, #03788C, #a71eb9, #1A112C); */
+    /* background: conic-gradient(from 0deg, #008BCF, #F5ECEF, #9d59bd, #d4a4d8, #008BCF, #F5ECEF, #6d467c, #F6EDF0, #dca8e0); */
+    background: conic-gradient(from 0deg, #03788C, #18234d, #291949, #6D017B, #0E142A, #03788C, #a71eb9, #1A112C);
     animation: anim-gradient 5s linear infinite;
 }
 
@@ -418,4 +418,8 @@ input[type="range"] {
 
 input[type="range"]::-webkit-slider-thumb {
     background: pink;
+}
+
+.dark {
+    color: white;
 }

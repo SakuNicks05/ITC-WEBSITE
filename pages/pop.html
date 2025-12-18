@@ -10,12 +10,12 @@
 <body>
     <div class="gradient-background">
         <div class="gradient-container">
-            <div class="grad-1"></div>
+            <div class="dark-background" id="grad-1"></div>
         </div><meta name="viewport" content="width=device-width, initial-scale=1.0">
     </div>
 
-    <h3 id="main-title">MixUp</h3>
-    <button id="mode">Dark Mode</button>
+    <h3 class="main-title dark-text">MixUp</h3>
+    <button class="button-mode" id="mode" onclick="darkMode()">Mode</button>
 
     <ul class="navbar-list">
         <li><a href="#" data-section="pop">Pop</a></li>
@@ -49,17 +49,17 @@
                 <span class="duration firstDuration dark-text">4:54</span>
                 <img class="play" 
                      src="../assets/icons/play.png"
-                     data-audio="../assets/audio/pop/billie.mp3">
+                     data-audio="">
             </li>
             <li class="song-box">
                 <span class="song-number"></span>
                 <img class="album-cover secondCover" src="../assets/album-images/pop/prayer.jpg" alt="Like a Prayer">
-                <p class="song-info"><span class="song-title secondTitle dark-text">Like a Prayer</span> <br> <span class="artist secondArtist">Madonna</span></p>
+                <p class="song-info dark-text"><span class="song-title secondTitle">Like a Prayer</span> <br> <span class="artist secondArtist">Madonna</span></p>
                 <span class="album secondAlbum dark-text">Like a Prayer</span>
                 <span class="duration secondDuration dark-text">5:42</span>
                 <img class="play" 
                      src="../assets/icons/play.png"
-                     data-audio="../assets/audio/pop/prayer.mp3">
+                     data-audio="">
             </li>
             <li class="song-box">
                 <span class="song-number"></span>
@@ -69,7 +69,7 @@
                 <span class="duration thirdDuration dark-text">4:31</span>
                 <img class="play" 
                      src="../assets/icons/play.png"
-                     data-audio="../assets/audio/pop/will-love.mp3">
+                     data-audio="">
             </li>
             <li class="song-box">
                 <span class="song-number"></span>
@@ -79,7 +79,7 @@
                 <span class="duration fourthDuration dark-text">8:41</span>
                 <img class="play" 
                      src="../assets/icons/play.png"
-                     data-audio="../assets/audio/pop/purple.mp3">
+                     data-audio="">
             </li>
             <li class="song-box">
                 <span class="song-number"></span>
@@ -89,7 +89,7 @@
                 <span class="duration fifthDuration dark-text">3:30</span>
                 <img class="play" 
                      src="../assets/icons/play.png"
-                     data-audio="../assets/audio/pop/baby-one.mp3">
+                     data-audio="">
             </li>
 
             <li class="song-box">
@@ -180,7 +180,22 @@
             <p id="card-title" class="dark-text">Billie Jean</p>
             <p id="card-artist" class="dark-text"><i>Michael Jackson</i></p>
             <p id="card-song-album" class="dark-text">Thriller</p>
-            <img id="play-pause" src="../assets/icons/play.png">
+            <div class="icon-container">
+                <img class="icons other" src="../assets/icons/repeat.png">
+                <img class="icons arrow" src="../assets/icons/left.png">
+                <img id="icons play-icon" src="../assets/icons/play.png">
+                <img class="icons arrow" src="../assets/icons/right.png">
+                <img class="icons other" src="../assets/icons/download.png">
+            </div>
+            <div class="time-stamps">
+                <span>0:00</span>
+                <input
+                        type="range"
+                        id="bar"
+                        value="0"
+                        >
+                <span>0:00</span>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

@@ -37,6 +37,7 @@ body {
     width: 100vw;
     height: 100vh;
     background: conic-gradient(from 0deg, #008BCF, #F5ECEF, #9d59bd, #d4a4d8, #008BCF, #F5ECEF, #6d467c, #F6EDF0, #dca8e0);
+    /* background: conic-gradient(from 0deg, #03788C, #18234d, #291949, #6D017B, #0E142A, #03788C, #a71eb9, #1A112C); */
     animation: anim-gradient 5s linear infinite;
 }
 
@@ -69,6 +70,10 @@ body {
     font-family: 'Konkhmer Sleokchher';
     font-weight: 300;
     padding: 10px 0px 10px 35px;
+}
+
+#now-playing {
+    margin-left: 60vw;
 }
 
 .head-container {
@@ -110,7 +115,6 @@ body {
     padding: 15px;
     gap: 15px;
     overflow: hidden;
-    width: 100%;
 }
 
 .navbar-list li a {
@@ -190,6 +194,8 @@ body {
     display: flex;
     gap: 25px;
     height: calc(100vh - 270px);
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .songlist-container {
@@ -256,14 +262,15 @@ body {
 
 .song-title {
     font-weight: bold;
+    font-size: 1.2vw;
 }
 
 .artist {
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 .album {
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: bold;
     color: #212121;
 }
@@ -274,20 +281,11 @@ body {
 }
 
 .duration {
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: bold;
     width: 40px;
     margin-left: 55px;
 }
-
-/* .song-info-container,
-#number,
-#cover,
-#title,
-#album,
-#duration {
-    outline: 2px solid red;
-} */
 
 /* ******************************* SCROLLBAR STYLING ******************************* */
 
@@ -314,10 +312,11 @@ body {
 .card-container {
     position: sticky;
     width: 21vw;
-    height: calc((76px + 15px) * 5);
+    height: 100%;
+    overflow-y: auto;
     border-radius: 12px;
-    margin-top: -75px;
-    margin-bottom: 15px;    
+    margin-bottom: 15px;
+    
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -344,16 +343,18 @@ body {
 
 #card-title,
 #card-song-album,
-#card-artist {
+#card-artist,
+#time-now,
+#full-duration {
     font-family: 'Kumbh Sans';
 }
 
 #card-title {
-    font-size: 28px;
+    font-size: 20px;
 }
 
 #card-artist {
-    margin-top: -5px;
+    margin-top: 10px;
     font-size: 16px;
 }
 
@@ -371,27 +372,28 @@ body {
     vertical-align: middle;
 }
 
+.time-stamps {
+    text-align: center;
+}
+
 .icons {
     padding: 10px 5px 0px 5px;
 }
 
 .play-icon {
-    width: 42px;
+    width: 52px;
 }
 
 .arrow {
     width: 30px;
 }
 
-.other {
-    width: 20px;
+.arrow:hover {
+    cursor: pointer;
 }
 
-.timestamp-container {
-    display: flex;
-    font-family: 'Kumbh Sans';
-    font-size: 14px;
-    font-weight: bold;
+#card-play-button:hover {
+    cursor: pointer;
 }
 
 input[type="range"] {
@@ -403,24 +405,9 @@ input[type="range"] {
     outline: none;
 }
 
-.timestamp-container input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    background: white;
-}
+/* ****************************************** DARK MODE ****************************************** */
 
-.timestamp-container element {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    background: pink;
-}
-
-/* ******************************************* DARK MODE ******************************************* */
-
-.dark-text.dark {
+body.dark .dark-text{
     color: white;
 }
 
@@ -430,22 +417,33 @@ input[type="range"]::-webkit-slider-thumb {
     margin: auto;
     width: 100vw;
     height: 100vh;
+    /* background: conic-gradient(from 0deg, #008BCF, #F5ECEF, #9d59bd, #d4a4d8, #008BCF, #F5ECEF, #6d467c, #F6EDF0, #dca8e0); */
     background: conic-gradient(from 0deg, #03788C, #18234d, #291949, #6D017B, #0E142A, #03788C, #a71eb9, #1A112C);
     animation: anim-gradient 5s linear infinite;
 }
 
 #mode.set-button {
-    padding: 5px 18px;
-    font-size: 10px;
-    font-family: 'Konkhmer Sleokchher';
-    text-align: center;
-    position: relative;
-    border-style: none;
-    border-radius: 10px;
     color: black;
     background-color: white;
-    font-weight: bold;
-    cursor: pointer;
-    float: right;
-    margin: 15px 25px 15px 0px;
+}
+
+#card-cont.card-style {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* RESPONSIVENESS STYLING */
+
+@media (max-width: 768px) {
+    .songlist-container {
+        font-size: 14px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .time-stamps input {
+        width: 90%;
+    }
 }

@@ -1,0 +1,12 @@
+body {
+    background-color: bisque;
+}
+
+table {
+    outline: 2px solid black;
+}
+
+th, 
+td {
+    border: 2px solid black;
+}

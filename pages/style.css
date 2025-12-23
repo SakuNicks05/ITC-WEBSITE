@@ -63,17 +63,27 @@ body {
     left: 47%;
     color: black;
     z-index: 10;
+    font-size: clamp(24px, 4vw, 28px);
+}
+
+.top-section {
+    font-family: 'Konkhmer Sleokchher';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 10px 35px;
 }
 
 #top-songs {
     position: relative;
-    font-family: 'Konkhmer Sleokchher';
     font-weight: 300;
-    padding: 10px 0px 10px 35px;
+    font-size: clamp(18px, 3.5vw, 40px);
 }
 
 #now-playing {
-    margin-left: 60vw;
+    position: relative;
+    font-size: clamp(14px, 4vw, 40px);
+    margin-right: 6vw;
 }
 
 .head-container {
@@ -134,8 +144,6 @@ body {
 
 .song-info-container {
     position: relative;
-    /* display: flex;
-    justify-content: space-evenly; */
 
     z-index: 20;
     opacity: 100%;
@@ -220,7 +228,6 @@ body {
 
     counter-increment: track;
     width: 100%;
-    /* display: flex; */
 }
 
 .song-box::before {
@@ -238,10 +245,10 @@ body {
                         50px
                         5px 
                         60px
-                        0.7fr
-                        200px
-                        50px
-                        50px;
+                        0.9fr
+                        0.6fr
+                        0.5fr
+                        0.3fr;
     align-items: center;
     column-gap: 15px;
 }
@@ -277,7 +284,7 @@ body {
 
 .play {
     cursor: pointer;
-    margin-left: 90px;
+    margin-left: 0;
 }
 
 .duration {
